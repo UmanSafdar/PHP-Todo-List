@@ -1,0 +1,53 @@
+body{
+    text-align: center;
+}
+/* Task item layout */
+ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #dbfd97;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Completed task */
+ul li.completed{
+    text-decoration: line-through;
+    color: gray;
+    background: #e0e0e0;
+}
+
+/* Action buttons container */
+.actions{
+    display: flex;
+    gap: 10px;
+}
+
+/* General button style */
+.actions a{
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    color: rgb(185, 5, 5);
+}
+
+/* Complete button */
+.complete-btn{
+    background-color: green;
+}
+
+.complete-btn:hover{
+    background-color: darkgreen;
+}
+
+/* Delete button */
+.delete-btn{
+    background-color: red;
+}
+
+.delete-btn:hover{
+    background-color: darkred;
+}
